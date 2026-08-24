@@ -20,12 +20,13 @@ source "$ITEM_DIR/wifi.sh"
 source "$ITEM_DIR/volume.sh"
 source "$ITEM_DIR/battery.sh"
 source "$ITEM_DIR/brew.sh"
+source "$ITEM_DIR/theme.sh"
 source "$ITEM_DIR/stats.sh"
 
 sketchybar --add bracket left.side '/space\..*/' \
   --set left.side "${bracket_defaults[@]}"
 
-sketchybar --add bracket right.side date clock wifi volume_icon volume battery brew stats \
+sketchybar --add bracket right.side date clock wifi volume_icon volume battery brew theme stats \
   --set right.side "${bracket_defaults[@]}"
 
 sketchybar --update

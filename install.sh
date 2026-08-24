@@ -2,7 +2,7 @@
 
 set -e
 
-REPO_URL="https://github.com/xscriptor/macosx.git"
+REPO_URL="https://github.com/xscriptor-colors/macos.git"
 DOTFILES_DIR="$HOME/.macosx"
 CONFIG_DIR="$HOME/.config"
 
@@ -21,7 +21,9 @@ if ! command -v brew &>/dev/null; then
 fi
 
 echo "  -> Installing packages ..."
-brew install sketchybar aerospace
+brew tap FelixKratz/formulae
+brew install sketchybar
+brew install --cask nikitabobko/tap/aerospace
 
 if ! fc-list | grep -qi "Hack Nerd Font"; then
   echo "  -> Installing Hack Nerd Font ..."
@@ -39,3 +41,8 @@ aerospace reload-config 2>/dev/null || true
 
 echo ""
 echo "==> Done. Reload Aerospace with Ctrl+Shift+r if needed."
+echo ""
+echo "==> Next steps (required by macOS):"
+echo "  - System Settings > Desktop & Dock: enable 'Displays have separate Spaces' (SketchyBar)."
+echo "  - System Settings > Privacy & Security > Accessibility: grant access to AeroSpace."
+echo "  - Launch AeroSpace once from /Applications to grant accessibility permissions."

@@ -1,4 +1,4 @@
-<h1 align="center">macOS Xscriptor</h1>
+<h1 align="center">MacOS</h1>
 
 <p align="center">
   Lightweight macOS desktop environment: SketchyBar topbar and AeroSpace window manager, configured for productivity and visual clarity.
@@ -25,6 +25,7 @@
 <h2 align="center">Contents</h2>
 <ul>
   <li><a href="#about">About</a></li>
+  <li><a href="#colors">Colors</a></li>
   <li><a href="#preview">Preview</a></li>
   <li><a href="#structure">Structure</a></li>
   <li><a href="#quick-install">Quick Install</a></li>
@@ -51,19 +52,40 @@
 </ul>
 
 
+<h2 align="center" id="colors">Colors</h2>
+
+
+<div align="center">
+  <a href="https://raw.githubusercontent.com/xscriptor-colors/assets/main/media/palettes/palette_x.svg"><img src="https://raw.githubusercontent.com/xscriptor-colors/assets/main/media/palettes/palette_x.svg" height="100" alt="X"/></a>
+  <a href="https://raw.githubusercontent.com/xscriptor-colors/assets/main/media/palettes/palette_madrid.svg"><img src="https://raw.githubusercontent.com/xscriptor-colors/assets/main/media/palettes/palette_madrid.svg" height="100" alt="Madrid"/></a>
+  <a href="https://raw.githubusercontent.com/xscriptor-colors/assets/main/media/palettes/palette_lahabana.svg"><img src="https://raw.githubusercontent.com/xscriptor-colors/assets/main/media/palettes/palette_lahabana.svg" height="100" alt="Lahabana"/></a>
+  <a href="https://raw.githubusercontent.com/xscriptor-colors/assets/main/media/palettes/palette_miami.svg"><img src="https://raw.githubusercontent.com/xscriptor-colors/assets/main/media/palettes/palette_miami.svg" height="100" alt="Miami"/></a>
+  <a href="https://raw.githubusercontent.com/xscriptor-colors/assets/main/media/palettes/palette_paris.svg"><img src="https://raw.githubusercontent.com/xscriptor-colors/assets/main/media/palettes/palette_paris.svg" height="100" alt="Paris"/></a>
+  <a href="https://raw.githubusercontent.com/xscriptor-colors/assets/main/media/palettes/palette_tokio.svg"><img src="https://raw.githubusercontent.com/xscriptor-colors/assets/main/media/palettes/palette_tokio.svg" height="100" alt="Tokio"/></a>
+</div>
+<div align="center">
+  <a href="https://raw.githubusercontent.com/xscriptor-colors/assets/main/media/palettes/palette_oslo.svg"><img src="https://raw.githubusercontent.com/xscriptor-colors/assets/main/media/palettes/palette_oslo.svg" height="100" alt="Oslo"/></a>
+  <a href="https://raw.githubusercontent.com/xscriptor-colors/assets/main/media/palettes/palette_helsinki.svg"><img src="https://raw.githubusercontent.com/xscriptor-colors/assets/main/media/palettes/palette_helsinki.svg" height="100" alt="Helsinki"/></a>
+  <a href="https://raw.githubusercontent.com/xscriptor-colors/assets/main/media/palettes/palette_berlin.svg"><img src="https://raw.githubusercontent.com/xscriptor-colors/assets/main/media/palettes/palette_berlin.svg" height="100" alt="Berlin"/></a>
+  <a href="https://raw.githubusercontent.com/xscriptor-colors/assets/main/media/palettes/palette_london.svg"><img src="https://raw.githubusercontent.com/xscriptor-colors/assets/main/media/palettes/palette_london.svg" height="100" alt="London"/></a>
+  <a href="https://raw.githubusercontent.com/xscriptor-colors/assets/main/media/palettes/palette_praha.svg"><img src="https://raw.githubusercontent.com/xscriptor-colors/assets/main/media/palettes/palette_praha.svg" height="100" alt="Praha"/></a>
+  <a href="https://raw.githubusercontent.com/xscriptor-colors/assets/main/media/palettes/palette_bogota.svg"><img src="https://raw.githubusercontent.com/xscriptor-colors/assets/main/media/palettes/palette_bogota.svg" height="100" alt="Bogota"/></a>
+</div>
+
+
+
 <h2 align="center" id="structure">Structure</h2>
 <ul>
-  <li><code>sketchybar/</code> — SketchyBar config: bar styles, items, plugins, colors, and icons.</li>
+  <li><code>sketchybar/</code> — SketchyBar config: bar styles, items, plugins, colors, icons, and themes.</li>
   <li><code>aerospace/</code> — AeroSpace config: workspace bindings, gaps, window rules, and keybindings.</li>
   <li><code>install.sh</code> — Automated install script for dependencies and dotfiles.</li>
   <li><code>uninstall.sh</code> — Removes configs, services, and packages.</li>
-  <li><code>assets/</code> — Screenshots and branding.</li>
 </ul>
 
 <h2 align="center" id="quick-install">Quick Install</h2>
 
 <pre>
-git clone https://github.com/xscriptor/macosx.git ~/macosx-dotfiles
+git clone https://github.com/xscriptor-colors/macos.git ~/macosx-dotfiles
 cd ~/macosx-dotfiles
 chmod +x install.sh
 ./install.sh
@@ -75,15 +97,15 @@ chmod +x install.sh
 
 <pre>
 # Install
-curl -fsSL https://raw.githubusercontent.com/xscriptor/macosx/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/xscriptor-colors/macos/main/install.sh | bash
 
 # Or with wget
-wget -qO- https://raw.githubusercontent.com/xscriptor/macosx/main/install.sh | bash
+wget -qO- https://raw.githubusercontent.com/xscriptor-colors/macos/main/install.sh | bash
 </pre>
 
 <pre>
 # Uninstall
-curl -fsSL https://raw.githubusercontent.com/xscriptor/macosx/main/uninstall.sh | bash
+curl -fsSL https://raw.githubusercontent.com/xscriptor-colors/macos/main/uninstall.sh | bash
 </pre>
 
 <h2 align="center" id="manual-install">Manual Install</h2>
@@ -101,7 +123,7 @@ curl -fsSL https://raw.githubusercontent.com/xscriptor/macosx/main/uninstall.sh 
 <h2 align="center" id="uninstall">Uninstall</h2>
 
 <pre>
-git clone https://github.com/xscriptor/macosx.git ~/macosx-dotfiles
+git clone https://github.com/xscriptor-colors/macos.git ~/macosx-dotfiles
 cd ~/macosx-dotfiles
 chmod +x uninstall.sh
 ./uninstall.sh
@@ -110,7 +132,7 @@ chmod +x uninstall.sh
 <p>Or run remotely:</p>
 
 <pre>
-curl -fsSL https://raw.githubusercontent.com/xscriptor/macosx/main/uninstall.sh | bash
+curl -fsSL https://raw.githubusercontent.com/xscriptor-colors/macos/main/uninstall.sh | bash
 </pre>
 
 <h2 align="center" id="usage">Usage</h2>
@@ -137,8 +159,34 @@ curl -fsSL https://raw.githubusercontent.com/xscriptor/macosx/main/uninstall.sh 
 
 <h2 align="center" id="customization">Customization</h2>
 
+<h3 align="center">Themes</h3>
+
+<p>
+  SketchyBar supports multiple color palettes. Themes live in <code>sketchybar/themes/</code> and
+  are defined with the same palette names as the VS Code Xscriptor Themes
+  (<a href="https://github.com/xscriptor-colors/vscode/blob/main/themes/xscriptor-themes/colors.md">colors.md</a>):
+  X, Madrid, Lahabana, Miami, Paris, Tokio, Oslo, Helsinki, Berlin, London, Praha, and Bogota.
+</p>
+
+<pre>
+# List the current theme and available palettes
+./sketchybar/theme.sh
+
+# Switch to a palette and reload the bar
+./sketchybar/theme.sh miami
+</pre>
+
+<p>
+  You can also cycle themes directly from the topbar: click the palette item
+  (<code>󰑩</code> + current theme name) to switch to the next palette.
+</p>
+
+<p>
+  The active theme is persisted in <code>~/.config/sketchybar/theme</code> (default: <code>x</code>).
+</p>
+
 <ul>
-  <li><strong>Colors:</strong> Edit <code>sketchybar/colors.sh</code> to change accent colors for the topbar.</li>
+  <li><strong>Colors:</strong> Edit <code>sketchybar/themes/&lt;theme&gt;.sh</code> to change accent colors for a palette, or add a new file to define a custom theme.</li>
   <li><strong>Icons:</strong> Edit <code>sketchybar/icons.sh</code> to change icon glyphs (Nerd Font required).</li>
   <li><strong>Window rules:</strong> Edit <code>aerospace/aerospace.toml</code> under <code>on-window-detected</code> to add new app-to-workspace bindings.</li>
   <li><strong>Keybindings:</strong> Edit <code>[mode.main.binding]</code> in <code>aerospace/aerospace.toml</code>.</li>
@@ -162,10 +210,8 @@ curl -fsSL https://raw.githubusercontent.com/xscriptor/macosx/main/uninstall.sh 
   <li><a href="https://github.com/xscriptor-colors/nvim">Nvim</a> <img src="https://xscriptor.github.io/icons/icons/code/product-design/xsvg/file-text.svg"/></li>
   <li><a href="https://github.com/xscriptor-colors/vscode">VSCode</a> <img src="https://xscriptor.github.io/icons/icons/code/product-design/xsvg/project.svg"/></li>
   <li><a href="https://github.com/xscriptor-colors/jetbrains">Jetbrains</a> <img src="https://xscriptor.github.io/icons/icons/code/product-design/xsvg/project.svg"/></li>
-  <li><a href="https://github.com/xscriptor/gitnapse">Gitnapse</a> <img src="https://xscriptor.github.io/icons/icons/code/product-design/xsvg/github-alt.svg"/></li>
   <li><a href="https://github.com/xscriptor-colors/obsidian">Obsidian</a> <img src="https://xscriptor.github.io/icons/icons/code/product-design/xsvg/markdown.svg"/></li>
-  <li><a href="https://github.com/xscriptor/xfetch">XFetch</a> <img src="https://xscriptor.github.io/icons/icons/code/product-design/xsvg/git-fetch.svg"/></li>
-  <li><a href="https://github.com/xscriptor/xcode">Xcode</a> <img src="https://xscriptor.github.io/icons/icons/code/product-design/xsvg/project.svg"/></li>
+  <li><a href="https://github.com/xscriptor-colors/xcode">Xcode</a> <img src="https://xscriptor.github.io/icons/icons/code/product-design/xsvg/project.svg"/></li>
 </ul>
 
 <div id="x" align="center">

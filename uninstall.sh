@@ -18,7 +18,10 @@ echo "  -> Removing dotfiles repo ..."
 rm -rf "$DOTFILES_DIR"
 
 echo "  -> Uninstalling packages ..."
-brew uninstall sketchybar aerospace 2>/dev/null || true
+brew uninstall sketchybar 2>/dev/null || true
+brew uninstall --cask nikitabobko/tap/aerospace 2>/dev/null || true
+brew untap FelixKratz/formulae 2>/dev/null || true
+brew untap nikitabobko/tap 2>/dev/null || true
 
 echo ""
 echo "==> Done."

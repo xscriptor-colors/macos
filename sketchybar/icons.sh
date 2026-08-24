@@ -2,6 +2,7 @@
 
 export ICON_APPLE=󰀵
 export ICON_X=󰘶
+export ICON_THEME=󰑩
 export ICON_TERM=󰆍
 export ICON_WEB=󰊯
 export ICON_DEV=󰨞
