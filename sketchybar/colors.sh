@@ -1,20 +1,12 @@
 #!/bin/bash
 
-X=(
-  blue "#5ad4e6"
-  teal "#5ad4e6"
-  cyan "#5ad4e6"
-  grey "#121212"
-  green "#7bd88f"
-  yellow "#fce566"
-  orange "#fd9353"
-  red "#fc618d"
-  purple "#948ae3"
-  maroon "#fc618d"
-  black "#000000"
-  trueblack "#000000"
-  white "#f7f1ff"
-)
+ACTIVE_THEME="x"
+
+if [[ -f "$CONFIG_DIR/theme" ]]; then
+  ACTIVE_THEME=$(cat "$CONFIG_DIR/theme")
+fi
+
+source "$CONFIG_DIR/themes/$ACTIVE_THEME.sh"
 
 COLORS=("${X[@]}")
 
@@ -40,11 +32,11 @@ getcolor() {
 
 BAR_COLOR=$(getcolor black)
 BAR_BORDER_COLOR=$(getcolor black 0)
-HIGHLIGHT=$(getcolor purple)
-HIGHLIGHT_75=$(getcolor purple 75)
-HIGHLIGHT_50=$(getcolor purple 50)
-HIGHLIGHT_25=$(getcolor purple 25)
-HIGHLIGHT_10=$(getcolor purple 10)
+HIGHLIGHT=$(getcolor accent)
+HIGHLIGHT_75=$(getcolor accent 75)
+HIGHLIGHT_50=$(getcolor accent 50)
+HIGHLIGHT_25=$(getcolor accent 25)
+HIGHLIGHT_10=$(getcolor accent 10)
 ICON_COLOR=$(getcolor white)
 ICON_COLOR_INACTIVE=$(getcolor white 25)
 LABEL_COLOR=$(getcolor white 75)
